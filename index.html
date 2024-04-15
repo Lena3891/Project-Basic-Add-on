@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+
+    <title>Hula Hoop - My favorite Hobby</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px auto;
+        }
+        img {
+            width: 100%;
+            
+        }
+        p {
+          font-size: 18px;
+          line-height: 1.5;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+  button {
+    display: block;
+    color: white;
+    margin: 0 auto;
+    background-color: rgb(224, 28, 162);
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+  button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+    color: black;
+    font-size: 20px;
+  }
+  .theme-button {
+    margin: 0 auto;
+    font-size: 22px;
+    background-color: rgb(224, 28, 162);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .theme-button:hover {
+    background-color: white;
+    color: black
+  }
+ 
+  .hoop-intro-picture {
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+  }
+  .hoop-intro-picture:hover {
+    filter: contrast(80%);
+    transform: scale(1.1);
+  }
+  .grid {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .grid img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .dark {
+    background: linear-gradient(114.9deg, rgb(34, 34, 34) 8.3%, rgb(0, 40, 60) 41.6%, rgb(0, 143, 213) 93.4%);
+    color: white
+  }
+  .dark .container {
+    background-color: rgb(60, 58, 58, 0.2);
+  }
+  .dark a {
+    color: white;
+  }
+  .dark footer {
+    color: white
+  }
+</style>
+    </head>
+    <body>
+        <button class="theme-button">CHANGE THEME</button>
+        <div class="container">
+        <h1>Hula Hoop 🥰</h1>
+        <h2>My favorite Hobby</h2>
+        
+        <a href="https://www.britannica.com/topic/Hula-Hoop" target="_blank">
+     
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/222/original/pexels-pavel-danilyuk-6339610.jpg?1711094425" alt="" class="hoop-intro-picture">
+    </a>
+    <div class="grid">
+        
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/220/original/pexels-karolina-grabowska-4379090.jpg?1711094219" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/221/original/pexels-karolina-grabowska-4498154.jpg?1711094286" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/069/original/pexels-yan-krukau-6815661.jpg?1711015249" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/074/original/pexels-pavel-danilyuk-6339606.jpg?1711016857" alt="">
+</div>
+     <p>
+        The modern hula hoop was inspired by Australian bamboo hoops. Common lore posits the creators of the plastic hoop popularised in the US witnessed Australian children playing with bamboo hoops while driving past in an automobile. The new plastic version was popularized in 1958 by the Wham-O toy company and became a fad.
+     </p>
+     <a href="https://www.wonderopolis.org/wonder/who-invented-the-hula-hoop" target="_blank"> 👉READ MORE</a>
+     <br>
+     <br>
+     <br>
+        <button id="info-button">WOULD YOU LIKE TO HULA HOOP TOGETHER?</button>
+        </div>
+        <footer>Coded with ❤️ by Magdalena Zyglewicz with HTML, CSS and JavaScript</footer>
+        <script>
+          function changeTheme() {
+            let body = document.querySelector("body");
+
+            body.classList.toggle("dark");
+            }
+          
+          let themeButton = document.querySelector(".theme-button");
+          themeButton.addEventListener("click", changeTheme);
+
+         function info() {
+    let quanty = prompt("Have you already done hula hoop?");
+    let name = prompt("What is your first name?");
+    let email = prompt("What is your E-Mail?");
+
+    alert("Thanks " + name + "! We will send you E-Mail with more information!");
+} 
+let button = document.querySelector("#info-button");
+button.addEventListener("click", info);
+        </script>
+    </body>
+    <html>
